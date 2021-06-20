@@ -1,0 +1,76 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #849EE3;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(../img/pattern5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-jc-sb {
+        justify-content: space-between;
+    }
+}
+
+#blue {
+    background-color: #849EE3;
+}
+#orange {
+    background-color: #E28686;
+}
+#green {
+    background-color: #5AE063;
+}
+#purple {
+    background-color:#D085DD}
+
+
+#yellow {
+    background-color: #E6C72E;
+}
+#pink {
+    background-color: #EA68E2;
+}
+#darkblue {
+    background-color: #4C46F0;
+}
+#red {
+    background-color: #F04646;
+}
+
+
+
+a:hover > #pointer-dot {
+    background-color: darkgoldenrod;
+}
