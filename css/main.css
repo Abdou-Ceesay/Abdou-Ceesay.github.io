@@ -247,7 +247,7 @@ a:hover > #pointer-dot {
   margin-left: 20px;
 }
 
-.colors:hover {
+.color:hover {
   opacity: 1;
 }
 
@@ -459,6 +459,12 @@ a:hover > #pointer-dot {
 }
 
 @media (max-width: 1024px) {
+  .header__menu ul li a {
+    margin-left: 1.4rem;
+  }
+  .hire-me {
+    font-size: 14px !important;
+  }
   .header__main__text {
     margin-top: 200px;
   }
@@ -518,6 +524,9 @@ a:hover > #pointer-dot {
   }
   .section-title2:nth-child(1) {
     font-size: 2rem;
+  }
+  .about {
+    padding-bottom: 70px;
   }
 }
 

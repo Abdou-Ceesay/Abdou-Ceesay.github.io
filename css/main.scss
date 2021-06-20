@@ -82,7 +82,7 @@
 .row-right {
     margin-left: 20px;
 }
-.colors:hover {
+.color:hover {
     opacity: 1;
 }
 .header {
@@ -270,10 +270,16 @@
     }
 }
 @media (max-width: 1024px) {
+    .header__menu ul li a {
+        margin-left: 1.4rem;
+    }
+    .hire-me {
+        font-size: 14px !important;
+    }
     .header__main__text {
         margin-top: 200px;
     }
-
+    
 
     .color_btns, .about-right {
         display: none;
@@ -307,6 +313,8 @@
     .section-title {
         margin-bottom: 20px;
     }
+    
+
     .about-right {
         display: none;
     }
@@ -330,7 +338,10 @@
     .section-title2:nth-child(1) {
         font-size: 2rem;
     }
-
+    .about {
+        padding-bottom: 70px;
+    }
+    
 }
 @media (max-width: 320px) {
     .header__logo {
