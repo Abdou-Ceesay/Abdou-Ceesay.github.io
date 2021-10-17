@@ -28,7 +28,7 @@ function setThemeColor(i) {
     if (color[i] === color[0]) {
 
 
-      document.documentElement.style.setProperty("--color", "#849EE3")
+      document.documentElement.style.setProperty("--color", "#F04646")
     } else if (color[i] === color[1]) {
       document.documentElement.style.setProperty("--color", "#e28686")
     } else if (color[i] === color[2]) {
@@ -43,7 +43,7 @@ function setThemeColor(i) {
       document.documentElement.style.setProperty(
         "--color","#4C46F0")
     } else if (color[i] === color[7]) {
-      document.documentElement.style.setProperty("--color", "#F04646")
+      document.documentElement.style.setProperty("--color", "#849EE3")
     } 
   }
   

@@ -10,7 +10,7 @@ ring.id = "pointer-ring"
 document.body.insertBefore(pointer, document.body.children[0])
 document.body.insertBefore(ring, document.body.children[0])
 
-let mouseX = -100
+let mouseX = -50
 let mouseY = -100
 let ringX = -100
 let ringY = -100
@@ -50,8 +50,8 @@ const init_pointer = (options) => {
     }
 
     const render = () => {
-        ringX = trace(ringX, mouseX, 0.15)
-        ringY = trace(ringY, mouseY, 0.15)
+        ringX = trace(ringX, mouseX, 0.06)
+        ringY = trace(ringY, mouseY, 0.06)
 
         if (document.querySelector(".p-action-click:hover")) {
             pointer.style.borderColor = getOption("pointerColor")
