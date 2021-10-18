@@ -285,13 +285,9 @@ a:hover > #pointer-dot {
   font-weight: 700;
   -webkit-transition: all .25s ease-in;
   transition: all .25s ease-in;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .header .hire-me:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
   background-color: var(--color);
 }
 
@@ -408,6 +404,8 @@ a:hover > #pointer-dot {
   border-radius: 25px;
   color: #eeeeee;
   margin-top: 50px;
+  -webkit-transition: all .6s ease-in;
+  transition: all .6s ease-in;
 }
 
 .work-item {

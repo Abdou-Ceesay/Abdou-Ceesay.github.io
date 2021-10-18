@@ -114,10 +114,8 @@
     border-radius: 35px;
     font-weight: 700;
     transition: all .25s ease-in;
-    transform: scale(1);
 }
 .hire-me:hover {
-    transform: scale(1.05);
     background-color: var(--color);
 }
 
@@ -222,6 +220,7 @@
     border-radius: 25px;
     color: #eeeeee;
     margin-top: 50px;
+    transition: all .6s ease-in
 }
 //-----------------WORK------------------//
 .work-item {
