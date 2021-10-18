@@ -167,6 +167,7 @@ a:hover > #pointer-dot {
 .container {
   width: 85vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .color_btns {
@@ -360,7 +361,7 @@ a:hover > #pointer-dot {
   font-size: 44px;
   text-transform: uppercase;
   color: #555;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   margin-top: 100px;
   padding-top: 20px;
   -webkit-transition: all .6s ease-in;
@@ -368,11 +369,12 @@ a:hover > #pointer-dot {
 }
 
 .about-main {
-  width: 100%;
+  width: 95%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 100px;
+  margin-left: 5%;
 }
 
 .section-title2 {
@@ -397,6 +399,15 @@ a:hover > #pointer-dot {
 
 .about-left {
   width: 45%;
+}
+
+#resume-btn {
+  padding: 10px 25px 15px 25px;
+  display: inline-block;
+  background-color: var(--color);
+  border-radius: 25px;
+  color: #eeeeee;
+  margin-top: 50px;
 }
 
 .work-item {
@@ -569,11 +580,31 @@ a:hover > #pointer-dot {
   .section-title {
     margin-bottom: 20px;
   }
+  .about-main {
+    width: 100%;
+    margin-left: 0;
+  }
   .about-right {
+    display: none;
+  }
+  .about-right svg {
     display: none;
   }
   .about-left {
     width: 100%;
+  }
+  .work-item {
+    width: 100%;
+    margin-left: 0;
+  }
+  .work-item .work-image {
+    width: 100%;
+  }
+  .right {
+    margin-left: 0;
+  }
+  .right .work-image {
+    margin-left: 0;
   }
 }
 
