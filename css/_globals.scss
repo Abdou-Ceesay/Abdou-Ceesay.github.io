@@ -5,6 +5,7 @@ html {
 
 :root {
     --color: #F04646;
+    --bg-color:#010101;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -12,7 +13,7 @@ html {
 
 body {
     //background-image: url(../img/pattern6.jpg);
-    background-color: #010101;
+    background-color: var(--bg-color);
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
@@ -21,6 +22,7 @@ body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     letter-spacing: 2px;
+    transition: all 500ms;
 }
 
 a {

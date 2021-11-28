@@ -1,5 +1,5 @@
 const color = document.querySelectorAll(".color")
-
+const themeBtn = document.getElementsByClassName("theme-btn")
 //let i;
 //for(i = 0;i<colors.length;i++) {
   //  colors[i].addEventListener('click', changecolor)  
@@ -46,7 +46,7 @@ function setThemeColor(i) {
       document.documentElement.style.setProperty("--color", "#849EE3")
     } 
   }
-  
+
 
   function initTheme() {
   var colorSelected = window.localStorage.getItem("colorTheme")

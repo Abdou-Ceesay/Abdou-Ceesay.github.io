@@ -6,6 +6,7 @@ html {
 
 :root {
   --color: #F04646;
+  --bg-color:#010101;
 }
 
 *, *::before, *::after {
@@ -14,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #010101;
+  background-color: var(--bg-color);
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
@@ -23,6 +24,8 @@ body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   letter-spacing: 2px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 a {
@@ -250,6 +253,16 @@ a:hover > #pointer-dot {
 
 .color:hover {
   opacity: 1;
+}
+
+.theme-btn {
+  margin-top: 20px;
+  padding: 7px 10px;
+  cursor: pointer;
+  background-color: var(--color);
+  border: none;
+  border-radius: 3px;
+  color: #fefefe;
 }
 
 .header {

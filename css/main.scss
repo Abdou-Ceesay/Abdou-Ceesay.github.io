@@ -87,6 +87,16 @@
 .color:hover {
     opacity: 1;
 }
+
+.theme-btn {
+    margin-top: 20px;
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: var(--color);
+    border: none;
+    border-radius: 3px;
+    color: #fefefe;
+}
 .header {
     //------- navbar----------// 
     height: 100vh;
