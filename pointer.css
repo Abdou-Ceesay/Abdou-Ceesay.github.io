@@ -8,12 +8,12 @@
     top: 0;
     width: 6px;
     height: 6px;
-    background-color: #fff;
+    background-color: var(--color);
     position: fixed;
     border-radius: 4px;
     z-index: 101;
     pointer-events: none;
-    transition: border-color 0.5s;
+    transition: background-color 0.5s;
 }
 
 #pointer-ring {
@@ -22,17 +22,17 @@
     width: 0;
     height: 0;
     padding: 15px;
-    border: 1px solid white;
+    border:1px solid var(--color) !important;
     position: fixed;
+    color: var(--color);
     border-radius: 100px;
     z-index: 102;
     pointer-events: none;
+    transition: border .5s;
 }
 
 html {
     cursor: none !important;
 }
 
-a {
-    cursor: none !important;
-}
+
