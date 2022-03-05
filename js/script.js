@@ -1,5 +1,7 @@
 const color = document.querySelectorAll(".color")
 const themeBtn = document.getElementsByClassName("theme-btn")
+var themeIcon = document.getElementById("sun-icon") 
+var setTheme = document.body;
 //let i;
 //for(i = 0;i<colors.length;i++) {
   //  colors[i].addEventListener('click', changecolor)  
@@ -47,6 +49,42 @@ function setThemeColor(i) {
     } 
   }
 
+
+function defaultIcon() {
+  if(setTheme.classList.contains("lightmode")){
+    themeIcon.src = "img/moon.png"  
+  }else{
+    themeIcon.src = "img/sun.png" 
+  }
+}
+defaultIcon()
+  //lightmode darkmode//
+
+  function lightmode(){
+    setTheme.classList.toggle("lightmode");
+
+    var theme;
+
+    if(setTheme.classList.contains("lightmode")) {
+      theme= "LIGHT"
+      themeIcon.src = "img/moon.png" 
+    }else{
+      theme = "DARK"
+      themeIcon.src = "img/sun.png" 
+    }
+
+    localStorage.setItem("PageTheme", JSON.stringify(theme));
+  }
+let getTheme = JSON.parse(localStorage.getItem("PageTheme"))
+if(getTheme === "LIGHT") {
+  document.body.classList = "lightmode"
+  themeIcon.src= "img/moon.png"
+}
+
+
+themeIcon.addEventListener("click", () => {
+  lightmode()
+})
 
   function initTheme() {
   var colorSelected = window.localStorage.getItem("colorTheme")

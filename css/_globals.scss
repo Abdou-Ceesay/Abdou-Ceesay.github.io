@@ -5,7 +5,12 @@ html {
 
 :root {
     --color: #F04646;
-    --bg-color:#010101;
+    --primary-color:#010101;
+    --secundary-color:#edf2fc;
+}
+.lightmode {
+    --primary-color: #edf2fc;
+    --secundary-color: #010101;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -13,7 +18,7 @@ html {
 
 body {
     //background-image: url(../img/pattern6.jpg);
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
@@ -22,14 +27,22 @@ body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     letter-spacing: 2px;
-    transition: all 500ms;
+    transition: all 300ms;
+}
+h1 {
+    transition: all 300ms;
+}
+p {
+    transition: all 300ms;
 }
 
 a {
     text-decoration: none;
+    transition: all 300ms;
 }
 li {
     list-style: none;
+    transition: all 300ms;
 }
 
 .flex {

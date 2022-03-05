@@ -42,15 +42,23 @@
     justify-content: center;
     align-items: center;
     width: 90px;
-    padding: 15px;
+    padding: 20px 15px 20px 15px;
     background-color:rgba($color: #e4e4e4, $alpha: .04);
     //box-shadow: 0px 5px 10px #e2e2e2;
     border-radius: 8px;
     transition: border .6s ease-in;
+    #theme-text {
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        font-size: 12px;
+        color: var(--secundary-color);
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
 }
 
 .color_btns1 {
-    color: #eeeeee;
+    color: var(--secundary-color);
     height: 20px;
     display: flex;
     justify-content: center;
@@ -74,7 +82,7 @@
     margin-top: 20px;
     height: 20px;
     border-radius: 1px;
-    opacity: 0.15;
+    opacity: 0.35;
     transition: opacity 300ms ease-in-out;
 }
 .active {
@@ -87,14 +95,11 @@
     opacity: 1;
 }
 
-.theme-btn {
-    margin-top: 20px;
-    padding: 7px 10px;
+#sun-icon {
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
-    background-color: var(--color);
-    border: none;
-    border-radius: 3px;
-    color: #fefefe;
 }
 .header {
     //------- navbar----------// 
@@ -109,7 +114,7 @@
     }
     &__menu ul a {
         margin-left: 2.4rem;
-        color: #eeeeee;
+        color: var(--secundary-color);
         transition: all 200ms ease-in;
         cursor: none;
 
@@ -119,17 +124,15 @@
     }
 .hire-me {
     padding: 15px 30px;
-    border: 2px solid var(--color);
-    color: #fefefe;
+    background-color: var(--color);
+    color: #fff;
     font-size: 16px;
     border-radius: 35px;
     font-weight: 700;
     transition: all .25s ease-in;
     cursor: pointer;
 }
-.hire-me:hover {
-    background-color: var(--color);
-}
+
 
 
 #Calque_1 {
@@ -151,7 +154,7 @@
             animation: 1s ease-in-out 0s 1 slideDown;
             & h1 {
                 font-size: 60px;
-                color: #eeeeee;
+                color: var(--secundary-color);
                 & span {
                     color: var(--color);
                     transition: color .6s ease-in;
@@ -160,7 +163,7 @@
 
             & p {
                 font-size: 28px;
-                color: #eeeeee;
+                color: var(--secundary-color);
                 & span {
                     color: var(--color);
                     transition: color .6s ease-in;
@@ -194,7 +197,7 @@
 .section-title {
     font-size: 44px;
     text-transform: uppercase;
-    color: #555;
+    color: #777;
     margin-bottom: 40px;
     margin-top: 100px;
     padding-top: 20px;
@@ -207,7 +210,7 @@
     margin-left: 5%;
 }
 .section-title2 {
-    color: #fefefe;
+    color: var(--secundary-color);
     font-size: 28px;
 }
 .section-title2:nth-child(1){
@@ -215,7 +218,7 @@
 }
 
 .section-p {
-    color: rgba($color: #fff, $alpha: .6);
+    color: var(--secundary-color);
 }
 .section-p-color {
     color: var(--color);
@@ -240,7 +243,7 @@
 .work-item {
     width: 70%;
     display: flex;
-    color: #fefefe;
+    color: var(--secundary-color);
     flex-direction: column-reverse;
     margin-left: 5%;
     margin-bottom: 100px;
